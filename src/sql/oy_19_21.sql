@@ -8,16 +8,19 @@
 */
 
 SELECT age1921.diploma AS degree, 
-        ROUND((count(*) / SUM(COUNT(*)) OVER()) * 100, 0) AS ratio_19_21,
-        COUNT(*) AS popluation_19_21, 
-        --SUM(COUNT(*)) OVER() AS total_19_21
+        --ROUND((count(*) / SUM(COUNT(*)) OVER()) * 100, 0) AS ratio_row_19_21,
+        --COUNT(*) AS row_19_21,
+        SUM(age1921.pwgtp) As popluation_19_21,
+        --SUM(SUM(age1921.pwgtp)) OVER()  AS total,
+        ROUND(SUM(age1921.pwgtp) / (SUM(SUM(age1921.pwgtp)) OVER()) * 100,0) As ratio_19_21
 FROM(
-    SELECT CASE 
-        WHEN (schl BETWEEN '01' AND '15') THEN '0_No diploma'
-        WHEN (schl BETWEEN '16' AND '17') THEN '1_HS or GED'
-        WHEN (schl BETWEEN '18' AND '19') THEN '2_Some college'
-        WHEN (schl BETWEEN '20' AND '24') THEN '3_Degree'
-        ELSE '4_NA'
+    SELECT pwgtp,
+        CASE 
+            WHEN (schl BETWEEN '01' AND '15') THEN '0_No diploma'
+            WHEN (schl BETWEEN '16' AND '17') THEN '1_HS or GED'
+            WHEN (schl BETWEEN '18' AND '19') THEN '2_Some college'
+            WHEN (schl BETWEEN '20' AND '24') THEN '3_Degree'
+            ELSE '4_NA'
         END As diploma
     FROM pums_2017
     WHERE ((puma BETWEEN '11610' AND '11614') OR puma = '11604' OR puma = '11605') -- PUMA
