@@ -8,7 +8,7 @@
 */
 
 SELECT age1921.diploma AS degree, 
-        --ROUND((count(*) / SUM(COUNT(*)) OVER()) * 100, 0) AS ratio_row_19_21,
+        --ROUND((count(*) / SUM(COUNT(*)) OVER()) * 100, 0) AS ratio_row_19_21, -- number of row
         --COUNT(*) AS row_19_21,
         SUM(age1921.pwgtp) As popluation_19_21,
         --SUM(SUM(age1921.pwgtp)) OVER()  AS total,
@@ -30,8 +30,3 @@ FROM(
     ) age1921
 GROUP BY age1921.diploma
 ORDER BY degree
-
-
-
-
-

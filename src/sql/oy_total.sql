@@ -30,8 +30,3 @@ FROM(
     ) age1624
 GROUP BY age1624.diploma
 ORDER BY degree
-
-
-
-
-

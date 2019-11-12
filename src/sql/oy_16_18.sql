@@ -4,18 +4,16 @@
     Purpose:    Count the number of 2017 population in opportunity youth in South King County
                 in defferent diploma
                 age from 16 to 24                 
-    Note:       
+    Note: TODO: Could not show '3_Degree' = 0
 */
-
 SELECT age1618.diploma AS degree, 
-        --ROUND((count(*) / SUM(COUNT(*)) OVER()) * 100, 0) AS ratio_row_16_18,
+        --ROUND((count(*) / SUM(COUNT(*)) OVER()) * 100, 0) AS ratio_row_16_18, -- number of row
         --COUNT(*) AS row_16_18,
         SUM(age1618.pwgtp) As popluation_16_18,
         --SUM(SUM(age1618.pwgtp)) OVER()  AS total,
         ROUND(SUM(age1618.pwgtp) / (SUM(SUM(age1618.pwgtp)) OVER()) * 100,0) As ratio_16_18
 FROM(
-    
-    SELECT pwgtp,
+    SELECT pwgtp, --weight
         CASE 
             WHEN (schl BETWEEN '01' AND '15') THEN '0_No diploma'
             WHEN (schl BETWEEN '16' AND '17') THEN '1_HS or GED'
@@ -31,9 +29,3 @@ FROM(
     ) age1618
 GROUP BY age1618.diploma
 ORDER BY degree
-
-
-
-
-
-
