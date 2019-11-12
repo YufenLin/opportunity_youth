@@ -1,0 +1,11 @@
+SELECT count(*),
+    CASE
+       WHEN agep BETWEEN 16 AND 18 THEN '16 - 18'
+       WHEN agep BETWEEN 19 AND 21 THEN '19 - 21'
+       WHEN agep BETWEEN 22 AND 24 THEN '22 - 24'
+       ELSE '24 - 99' END AS age_range
+FROM pums_2017
+WHERE esr BETWEEN '4' AND '6' 
+AND schl BETWEEN '01' AND '15'
+GROUP BY age_range
+;

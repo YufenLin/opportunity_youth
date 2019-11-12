@@ -1,0 +1,9 @@
+SELECT count(*)
+FROM pums_2017
+WHERE (schl BETWEEN '20' AND '24')
+AND (agep BETWEEN 19 AND 21) 
+AND sch = '1'
+AND (ESR = '3' OR ESR='6')
+AND (puma BETWEEN '11610' AND '11614')
+;
+--3

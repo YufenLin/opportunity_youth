@@ -1,0 +1,4 @@
+SELECT count(*) 
+FROM pums_2017
+WHERE puma BETWEEN '11610' AND '11614'
+;
