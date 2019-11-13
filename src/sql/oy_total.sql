@@ -10,9 +10,9 @@
 SELECT age1624.diploma AS degree, 
         --ROUND((count(*) / SUM(COUNT(*)) OVER()) * 100, 0) AS ratio_row_22_24,
         --COUNT(*) AS row_22_24,
-        SUM(age1624.pwgtp) As popluation_16_24,
+        SUM(age1624.pwgtp) As popluation_total,
         --SUM(SUM(age1624.pwgtp)) OVER()  AS total,
-        ROUND(SUM(age1624.pwgtp) / (SUM(SUM(age1624.pwgtp)) OVER()) * 100,0) As ratio_16_24
+        ROUND(SUM(age1624.pwgtp) / (SUM(SUM(age1624.pwgtp)) OVER()) * 100,0) As ratio_total
 FROM(
     SELECT pwgtp,
         CASE 
