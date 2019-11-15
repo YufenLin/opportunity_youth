@@ -15,13 +15,13 @@ These trends may indicate that current projects aimed at younger Opportunity You
 ## Process
 * A map that visualizes which parts of King County are a part of South King County;
 * Estimated number of opportunity youth in South King County from US Census PUMS data in 2017([PUMS_Data_Dictionary_2017](references/PUMS_Data_Dictionary_2017.pdf)). According to:                
-+ PUMA is in South King County. (PUMA)
-+ Public use microdata area code (PUMA) based on 2010 Census definition    
-+ Employment status recode(ESR)
-+ School enrollment (SCH)
-+ Age (AGEP)                    
-+ Educational attainment (SCHL)
-+ Person’s weight (PWGTP)
+    + PUMA is in South King County. (PUMA)
+    + Public use microdata area code (PUMA) based on 2010 Census definition    
+    + Employment status recode(ESR)
+    + School enrollment (SCH)
+    + Age (AGEP)                    
+    + Educational attainment (SCHL)
+    + Person’s weight (PWGTP)
 
 
 ## Methodology
