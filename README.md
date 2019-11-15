@@ -6,6 +6,12 @@ This project offers an updated estimate of the number of Opportunity Youth in So
 
 These trends may indicate that current projects aimed at younger Opportunity Youth have helped positively in aiding more to graduate high school. However since we are seeing less Opportunity Youth enter college or graduate college, this might be an opportunity for more targeted aid aimed at Opportunity Youth who have graduated high school, but have not entered the workforce or entered/finished college.
 
+* There are just over 12,000 Opportunity Youth in the Road Map Project region (South Seattle and South King County). This is a marked decrease to the 19,000 reported in the 2016 study (and recently reported in the Seattle Times).
+* A possible trend we have identified is that the percentage of Opportunity Youth with a college degree (Associates degree or higher) has decreased by 6% (total between all age groups) when compared to 2014 figures.
+* We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014. 
+* Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6%S. 
+
+
 
 
 
