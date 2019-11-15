@@ -15,7 +15,7 @@ SELECT age1921.diploma AS degree,
         ROUND(SUM(age1921.pwgtp) / (SUM(SUM(age1921.pwgtp)) OVER()) * 100,0) As ratio_19_21
 FROM(
     SELECT pwgtp,
-        CASE 
+        CASE    -- different diploma case
             WHEN (schl BETWEEN '01' AND '15') THEN '0_No diploma'
             WHEN (schl BETWEEN '16' AND '17') THEN '1_HS or GED'
             WHEN (schl BETWEEN '18' AND '19') THEN '2_Some college'
@@ -23,7 +23,7 @@ FROM(
             ELSE '4_NA'
         END As diploma
     FROM pums_2017
-    WHERE ((puma BETWEEN '11610' AND '11614') OR puma = '11604' OR puma = '11605') -- PUMA
+    WHERE ((puma BETWEEN '11610' AND '11614') OR puma = '11604' OR puma = '11605') -- -- PUMA of South King County
     AND (agep BETWEEN 19 AND 21)
     AND sch = '1' -- No school enrollment
     AND (esr = '2' OR esr = '3' OR esr = '5' OR esr ='6') -- Not at work
