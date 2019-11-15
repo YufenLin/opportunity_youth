@@ -1,4 +1,4 @@
-# A Revised Update on the Number of Opportunity Youth in South King County
+# A Revised Update on the Number of Opportunity Youth in South King County in 2017
 
 This project offers an updated estimate of the number of Opportunity Youth in South King County using the 2017 5-year American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html) Public Use Microdata Survey [(PUMS)](https://www.census.gov/programs-surveys/acs/technical-documentation/pums.html).
 
@@ -12,9 +12,9 @@ These trends may indicate that current projects aimed at younger Opportunity You
 ## Methodology
 
 * Query data from a [PostgreSQL database](https://www.postgresql.org/) of US Census PUMA regions;
-* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, use [matplotlib](https://matplotlib.org/) to create bar charts and [GeoPandas](http://geopandas.org/) to create population choropleth map;
+* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, use [Matplotlib](https://matplotlib.org/) to create bar charts and [GeoPandas](http://geopandas.org/) to create population choropleth map;
 * Map Figure Generation
-    + Map data obtained from US Government website, Shape file of Washington State PUMA regions
+    + Map data obtained from US government website, Shape file of Washington State PUMA regions
     + GeoPandas library used to map the shape file
     + Data obtained from PostgreSQL database used to populate choropleth maps of Opportunity Youth and job opportunities in South King County
 
