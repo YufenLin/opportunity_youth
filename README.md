@@ -5,8 +5,8 @@ This project offers an updated estimate of the number of Opportunity Youth in So
 ## Findings
 
 These trends may indicate that current projects aimed at younger Opportunity Youth have helped positively in aiding more to graduate high school. However since we are seeing less Opportunity Youth enter college or graduate college, this might be an opportunity for more targeted aid aimed at Opportunity Youth who have graduated high school, but have not entered the workforce or entered/finished college.
-* A possible trend we have identified is that the percentage of Opportunity Youth with a college degree (Associates degree or higher) has decreased by 6% (total between all age groups) when compared to 2014 figures.
-* We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014.
+* A possible trend we have identified is that the percentage of Opportunity Youth with a college degree (Associates degree or higher) has decreased by 6% (total between all age groups) when compared to 2014 figures;
+* We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014;
 * Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6%.
 
 ## Methodology
@@ -21,14 +21,14 @@ These trends may indicate that current projects aimed at younger Opportunity You
 ## Process
 * A map that visualizes which parts of King County are a part of South King County;
 * Estimated number of opportunity youth in South King County from US Census PUMS data in 2017([2017_PUMS_README](references/ACS2013_2017_PUMS_README.pdf), [PUMS_Data_Dictionary_2017](references/PUMS_Data_Dictionary_2017.pdf)). Variables includes:                
-    + PUMA is in South King County. Public use microdata area code (PUMA) based on 2010 Census definition    
-    + Employment status recode(ESR)
-    + School enrollment (SCH)
-    + Age (AGEP)                    
+    + Age (AGEP)
     + Educational attainment (SCHL)
-    + Person’s weight (PWGTP)(note: this is statistical weight)
+    + Employment status recode(ESR)
     + Housing unit/GQ person serial number (SERIALNO)
     + Person number (SPORDER) 
+    + Person’s weight (PWGTP)(note: this is statistical weight)
+    + PUMA is in South King County. Public use microdata area code (PUMA) based on 2010 Census definition    
+    + School enrollment (SCH)
 
 
 ## DELIVERABLES
