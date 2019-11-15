@@ -5,19 +5,17 @@ This project offers an updated estimate of the number of Opportunity Youth in So
 ## Findings
 
 These trends may indicate that current projects aimed at younger Opportunity Youth have helped positively in aiding more to graduate high school. However since we are seeing less Opportunity Youth enter college or graduate college, this might be an opportunity for more targeted aid aimed at Opportunity Youth who have graduated high school, but have not entered the workforce or entered/finished college.
-
-* There are just over 12,000 Opportunity Youth in the Road Map Project region (South Seattle and South King County). This is a marked decrease to the 19,000 reported in the 2016 study (and recently reported in the Seattle Times).
 * A possible trend we have identified is that the percentage of Opportunity Youth with a college degree (Associates degree or higher) has decreased by 6% (total between all age groups) when compared to 2014 figures.
-* We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014. 
-* Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6% .  
+* We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014.
+* Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6%.
 
 ## Methodology
 
-* Query data from a [PostgreSQL database](https://www.postgresql.org/) (of US Census PUMA regions);
-* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, use matplotlib to create bar charts and GeoPandas to create population choropleth map;
+* Query data from a [PostgreSQL database](https://www.postgresql.org/) of US Census PUMA regions;
+* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, use matplotlib(https://matplotlib.org/) to create bar charts and [GeoPandas](http://geopandas.org/) to create population choropleth map;
 * Map Figure Generation
-    + Map data obtained from [US Government website](), Shape file of Washington State PUMA regions
-    + [GeoPandas library](http://geopandas.org/) used to map the shape file
+    + Map data obtained from US Government website, Shape file of Washington State PUMA regions
+    + GeoPandas library used to map the shape file
     + Data obtained from PostgreSQL database used to populate choropleth maps of Opportunity Youth and job opportunities in South King County
 
 ## Process
@@ -35,8 +33,8 @@ These trends may indicate that current projects aimed at younger Opportunity You
 
 ## DELIVERABLES
 * [`src/`](/src) directory stores all relevant source code.
-* [`src/data/`](src/data) stores all relevant raw and processed data files.
-* [`src/visualization/`](src/src/visualization/) includes all relevant visualization figures.
+* [`data/`](data) stores all relevant raw and processed data files.
+* [`src/visualization/`](src/visualization/) includes all relevant visualization figures.
 
 ## Setup Instructions
 
