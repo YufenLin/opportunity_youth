@@ -20,7 +20,7 @@ These trends may indicate that current projects aimed at younger Opportunity You
 
 ## Process
 * A map that visualizes which parts of King County are a part of South King County;
-* Estimated number of opportunity youth in South King County from US Census PUMS data in 2017([2017_PUMS_README](references/ACS2013_2017_PUMS_README.pdf), [PUMS_Data_Dictionary_2017](references/PUMS_Data_Dictionary_2017.pdf)). Variables includes:                
+* Estimated number of opportunity youth in South King County from US Census PUMS data in 2017([2017 PUMS README](references/ACS2013_2017_PUMS_README.pdf), [2017 PUMS Data Dictionary](references/PUMS_Data_Dictionary_2017.pdf)). Variables includes:                
     + Age (AGEP)
     + Educational attainment (SCHL)
     + Employment status recode(ESR)
@@ -35,6 +35,7 @@ These trends may indicate that current projects aimed at younger Opportunity You
 * [`src/`](/src) directory stores all relevant source code.
 * [`data/`](data) stores all relevant raw and processed data files.
 * [`src/visualization/`](src/visualization/) includes all relevant visualization figures.
+* [`sql`](/src/sql) includes all relevant SQL queries.
 
 ## Setup Instructions
 
