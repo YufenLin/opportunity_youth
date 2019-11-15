@@ -6,17 +6,16 @@ This project offers an updated estimate of the number of Opportunity Youth in So
 
 These trends may indicate that current projects aimed at younger Opportunity Youth have helped positively in aiding more to graduate high school. However since we are seeing less Opportunity Youth enter college or graduate college, this might be an opportunity for more targeted aid aimed at Opportunity Youth who have graduated high school, but have not entered the workforce or entered/finished college.
 
-* There are just over 12,000 Opportunity Youth in the Road Map Project region (South Seattle and South King County). This is a marked decrease to the 19,000 reported in the 2016 study (and recently reported in the Seattle Times).
-* A possible trend we have identified is that the percentage of Opportunity Youth with a college degree (Associates degree or higher) has decreased by 6% (total between all age groups) when compared to 2014 figures.
-* We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014. 
-* Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6%. 
+* <sup>1</sup> There are just over 12,000 Opportunity Youth in the Road Map Project region (South Seattle and South King County). This is a marked decrease to the 19,000 reported in the 2016 study (and recently reported in the Seattle Times).
+* <sup>2</sup> A possible trend we have identified is that the percentage of Opportunity Youth with a college degree (Associates degree or higher) has decreased by 6% (total between all age groups) when compared to 2014 figures.
+* <sup>3</sup> We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014. 
+* <sup>4</sup> Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6%. 
 
 
 ## Process
 * A map that visualizes which parts of King County are a part of South King County;
 * Estimated number of opportunity youth in South King County from US Census PUMS data in 2017([PUMS_Data_Dictionary_2017](references/PUMS_Data_Dictionary_2017.pdf)). According to:                
-    + PUMA is in South King County. (PUMA)
-    + Public use microdata area code (PUMA) based on 2010 Census definition    
+    + PUMA is in South King County. Public use microdata area code (PUMA) based on 2010 Census definition    
     + Employment status recode(ESR)
     + School enrollment (SCH)
     + Age (AGEP)                    
@@ -27,8 +26,19 @@ These trends may indicate that current projects aimed at younger Opportunity You
 ## Methodology
 
 * Query data from a PostgreSQL database;
-* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, we use matplotlib to create bar charts and geopandas to create population choropleth map;
+* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, use matplotlib to create bar charts and geopandas to create population choropleth map;
+* Map Figure Generation
+    + Map data obtained from [US Government website](), Shape file of Washington State PUMA regions 
+    + GeoPandas library used to map the shape file
+    + Data obtained from Postgresql database used to populate choropleth maps of Opportunity Youth and job opportunities in South King County
 
+
+
+
+## DELIVERABLES
+* [`src/`](/src) directory stores all relevant source code.
+* [`src/data/`](src/data) stores all relevant raw and processed data files.
+* [`src/visualization/`](src/src/visualization/) includes all relevant visualization figures.
 
 ## Setup Instructions
 
