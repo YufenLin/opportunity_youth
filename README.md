@@ -9,20 +9,20 @@ These trends may indicate that current projects aimed at younger Opportunity You
 * There are just over 12,000 Opportunity Youth in the Road Map Project region (South Seattle and South King County). This is a marked decrease to the 19,000 reported in the 2016 study (and recently reported in the Seattle Times).
 * A possible trend we have identified is that the percentage of Opportunity Youth with a college degree (Associates degree or higher) has decreased by 6% (total between all age groups) when compared to 2014 figures.
 * We have also found that in the 19-21 age group, college enrollment has decreased by 3% relative to 2014. 
-* Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6%. 
+* Another trend we have identified is that the percentage of Opportunity Youth that have completed High School (or obtained a GED) has increased by 6% .  
 
 ## Methodology
 
-* Query data from a PostgreSQL database;
-* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, use matplotlib to create bar charts and geopandas to create population choropleth map;
+* Query data from a [PostgreSQL database](https://www.postgresql.org/) (of US Census PUMA regions);
+* Using Jupyter Notebook to combine our code, our notes, and data visualization. To visualize descriptive statistics, use matplotlib to create bar charts and GeoPandas to create population choropleth map;
 * Map Figure Generation
-    + Map data obtained from [US Government website](), Shape file of Washington State PUMA regions 
-    + GeoPandas library used to map the shape file
-    + Data obtained from Postgresql database used to populate choropleth maps of Opportunity Youth and job opportunities in South King County
+    + Map data obtained from [US Government website](), Shape file of Washington State PUMA regions
+    + [GeoPandas library](http://geopandas.org/) used to map the shape file
+    + Data obtained from PostgreSQL database used to populate choropleth maps of Opportunity Youth and job opportunities in South King County
 
 ## Process
 * A map that visualizes which parts of King County are a part of South King County;
-* Estimated number of opportunity youth in South King County from US Census PUMS data in 2017([2017_PUMS_README](references/ACS2013_2017_PUMS_README.pdf),[PUMS_Data_Dictionary_2017](references/PUMS_Data_Dictionary_2017.pdf)). Variables:                
+* Estimated number of opportunity youth in South King County from US Census PUMS data in 2017([2017_PUMS_README](references/ACS2013_2017_PUMS_README.pdf), [PUMS_Data_Dictionary_2017](references/PUMS_Data_Dictionary_2017.pdf)). Variables includes:                
     + PUMA is in South King County. Public use microdata area code (PUMA) based on 2010 Census definition    
     + Employment status recode(ESR)
     + School enrollment (SCH)
@@ -31,10 +31,6 @@ These trends may indicate that current projects aimed at younger Opportunity You
     + Person’s weight (PWGTP)(note: this is statistical weight)
     + Housing unit/GQ person serial number (SERIALNO)
     + Person number (SPORDER) 
-
-
-
-
 
 
 ## DELIVERABLES
@@ -67,3 +63,13 @@ conda activate oy-env
 # make oy-env available to you as a kernel in jupyter
 python -m ipykernel install --user --name oy-env --display-name "oy-env"
 ```
+
+## Citations
+
+* <sup>1</sup> Yohalem, N., Cooley, S. 2016. “Opportunity Youth in the Road Map Project Region”. Community Center for Education Results. Available at: https://bit.ly/2P2XRF3. 
+
+* <sup>2</sup> Anderson, T., Braga, B., Derrick-Mills, T., Dodkowitz, A., Peters, E., Runes, C., and Winkler, M. 2019. “New Insights into the Back on Track Model’s Effects on Opportunity Youth Outcomes”. Urban Institute. Available at: https://bit.ly/2BuCLr1. 
+
+* <sup>3</sup> Seattle Region Partnership. 2016. “King County Opportunity Youth Overview: Demographics of opportunity youth and systemic barriers to employment”. https://bit.ly/2oRGz37. 
+
+* <sup>4</sup> Morton, N. 2019. “Nearly 19,000 youth in King County are neither working nor in school. How one Seattle nonprofit is changing that.” The Seattle Times. Available at: https://bit.ly/2W5EufR. 
